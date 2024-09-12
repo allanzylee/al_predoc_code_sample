@@ -2,7 +2,7 @@
 
 # Author: Allan Lee
 # Date: September 16th, 2022
-# Purpose: prepare instrumental variable: weather deviance
+# Purpose: prepare instrumental variable – weather deviance
 
 #########################################################################################################
 # Clear R
