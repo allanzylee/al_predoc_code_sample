@@ -2,7 +2,7 @@
 *																				*
 *	PROGRAM: 	Cleans Wave 1 Survey											*
 *	PURPOSE: 	Creates missing values & scales, checks summary stats Fall 2022 *
-*   AUTHOR:		Allan Lee, Sade Bonilla 										*
+*   AUTHOR:		Allan Lee										*
 *	CREATED:	12/27/22														*
 *	UPDATED: 	03/13/23	14:35PM												*
 *	NOTES: 		Do Not Write Over the Original Datasets							*
@@ -13,30 +13,19 @@
 clear all
 macro drop _all
 
-*Set your initials once:
-global initials sb
-*global initials vm
-*global initials al
-*global initials ah 
+*Set initial:
+global initials al
 
 *date tag
 global 		datetag: 	display %td!(NN!_DD!_YY!) date(c(current_date), "DMY")
 
-*sade's file locations
-global		sboffice	"/Users/sadeb/Dropbox (Penn GSE)"
-global		sbdata		"$sboffice/01 Cost-of-Living Grant Pilot/Data Files"
-global		sboutput	"$sboffice/01 Cost-of-Living Grant Pilot/Output Files"
-global		sblog		"$sboffice/01 Cost-of-Living Grant Pilot/Log Files"
-global		sbraw		"$sboffice/01 Cost-of-Living Grant Pilot/Raw Files"
-global		sbgrph		"$sboffice/01 Cost-of-Living Grant Pilot/Graph Files"
-
-*Vero's file locations
-global		vmoffice	"/Users/Vero/Documents"
-global		vmdata		"$vmoffice/01 Cost-of-Living Grant Pilot/Data Files"
-global		vmoutput	"$vmoffice/01 Cost-of-Living Grant Pilot/Output Files"
-global		vmlog		"$vmoffice/01 Cost-of-Living Grant Pilot/Log Files"
-global		vmraw		"$vmoffice/01 Cost-of-Living Grant Pilot/Raw Files"
-global		vmgrph		"$vmoffice/01 Cost-of-Living Grant Pilot/Graph Files"
+*Allan's file locations
+global aloffice "Z:\Dropbox"
+global aldata "$aloffice/01 XXX/Data Files"
+global aloutput "$aloffice/01 XXX/Output Files"
+global allog "$aloffice/01 XXX/Log Files"
+global alraw "$aloffice/01 XXX/Raw Files"
+global algrph "$aloffice/01 XXX/Graph Files"
 
 *start logging
 capture log close
