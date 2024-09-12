@@ -158,7 +158,7 @@ plot<-for_ex %>%
 
 plot
 
-# Export as PDF
+# Export
 ggsave("/Users/AllanLee/Desktop/Personal Projects/ECON4900/Output/01_sum_stat/07_fi_sum_stat_by_group.png",
        width=25,
        height=25,
